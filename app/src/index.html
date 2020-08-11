@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="/src/css/normalise.css">
-  <link rel="stylesheet" href="/dist/css/styles.css?cb=">
+  <link rel="stylesheet" href="/app/src/css/normalise.css">
+  <link rel="stylesheet" href="/app/dist/css/styles.css?cb=">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Article preview component</title>
@@ -19,11 +19,11 @@
 <body>
 
   <main>
-    <figure>
-      <img src="/app/src/images/drawers.jpg" alt="drawers">
+    <figure class="hero-container">
+      <img class="hero-image" src="/app/src/images/drawers.jpg" alt="drawers">
     </figure>
 
-    <section>
+    <section class="content-container">
 
       <h1>
         Shift the overall look and feel by adding these wonderful 
@@ -36,19 +36,19 @@
         to help you make any room feel complete.
       </p>
       
-      <div>
+      <div class="user-details">
 
-        <figure>
-          <img src="/app/src/images/avatar-michelle.jpg" alt="Michelle Appleton">
+        <figure class="avatar-container">
+          <img class="avatar" src="/app/src/images/avatar-michelle.jpg" alt="Michelle Appleton">
         </figure>
 
-        <div>
+        <div class="avatar-details">
           <span>Michelle Appleton</span>
           <span>28 Jun 2020</span>
         </div>
 
-        <figure>
-          <img src="/app/src/images/icon-share.svg" alt="share-button">
+        <figure class="share-container">
+          <img class="share-image" src="/app/src/images/icon-share.svg" alt="share-button">
         </figure>
       </div>
     </section>
