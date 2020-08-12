@@ -6,22 +6,22 @@
 
 body {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-
-  font-family: 'Segoe UI', sans-serif;
+  flex-direction: column;
+  
+  font-family: 'Manrope', sans-serif;
   background-color: #ECF2F8;
 }
 
 main {
-  // border: 4px solid palegreen;
   width: 90%;
 }
 
 .hero-container {
   // border: 4px solid palevioletred;
-  min-width: 280px;
+  // min-width: 280px;
   max-width: 500px;
   margin: 0 auto;
   
@@ -44,7 +44,7 @@ main {
 
   .container-2 {
     // border: 4px solid navy;
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
   }
 
@@ -62,7 +62,7 @@ main {
     // border: 4px solid darkblue;
     font-size: 15px;
     margin-bottom: 25px;
-    min-width: 270px;
+    min-width: 240px;
     max-width: 292px;
     line-height: 22px;
 
@@ -128,6 +128,24 @@ main {
 
 }
 
+@media only screen and (max-width: 350px) {
+
+  .content-container {
+
+    .container-2 {
+      width: 250px;
+    }
+
+    h1 {
+      width: 255px;
+    }
+
+    p {
+     min-width: 254px;
+    }
+  }
+}
+
 @media only screen and (min-width: 500px) {
   
   .content-container {
@@ -156,5 +174,41 @@ main {
       font-size: 14px;
     }
   
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  main {
+    // border: 2px solid purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-container {
+    min-width: 410px;
+    width: 30%;
+    margin: 0;
+  }
+
+  .content-container {
+    width: 60%;
+    margin: 0;
+
+    .container-2 {
+      width: 90%;
+    }
+
+    h1 {
+      width: 95%;
+      font-size: 24.8px;
+      line-height: 25px;
+    }
+
+    p {
+      max-width: 414px;
+      line-height: 23px;
+    }
   }
 }
