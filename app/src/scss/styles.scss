@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  border: 4px solid palegreen;
+  // border: 4px solid palegreen;
   width: 90%;
 }
 
@@ -25,7 +25,6 @@ main {
   max-width: 500px;
   margin: 0 auto;
   
-
   img {
     // border: 4px solid aquamarine;
     width: 100%;
@@ -34,17 +33,29 @@ main {
 
 .content-container {
   // border: 4px solid aqua;
-  width: 90%;
-  margin: 0 auto;
   background-color: white;
+
+  min-width: 280px;
+  max-width: 500px;
+  margin: 0 auto;
   padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  .container-2 {
+    // border: 4px solid navy;
+    width: 300px;
+    margin: 0 auto;
+  }
 
   h1 {
     // border: 4px solid blueviolet;
     font-size: 17px;
     font-weight: 550;
     width: 268px;
+    line-height: 23px;
     
+    color: #48556A;
   }
 
   p {
@@ -53,6 +64,9 @@ main {
     margin-bottom: 25px;
     min-width: 270px;
     max-width: 292px;
+    line-height: 22px;
+
+    color: #6D7F97;
   }
 }
 
@@ -63,8 +77,9 @@ main {
   margin-bottom: 15px;
 
   .avatar {
+    // border: 4px solid cornflowerblue;
     display: flex;
-    width: 175px;
+    width: 185px;
     justify-content: space-between;
   }
   
@@ -81,19 +96,65 @@ main {
     // border: 4px solid mediumvioletred;
     
     span {
-      font-size: 14px;
+      font-size: 13px;
       display: block;
-      margin-top: 5px;
+      margin-top: 5.4px;
+    }
+
+    .name {
+      color: #48556A;
+      font-weight: 700;
+    }
+
+    .date {
+      color: #6D7F97;;
     }
   }
 
   .share-container {
-    border: 4px solid blue;
+    // border: 4px solid blue;
+    // border-radius: 100%;
+    // width: 30px;
+
 
     img {
-      border: 4px solid green;
+      // border: 1px solid green;
+      background-color: #ECF2F8;
+      // border-radius: 20%;
+      width: 50px;
     }
   }
 
 
+}
+
+@media only screen and (min-width: 500px) {
+  
+  .content-container {
+
+    h1 {
+      width: 320px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    p {
+      min-width: 320px;
+      font-size: 16.4px;
+      line-height: 22px;
+    }
+    
+  }
+
+  .user-details {
+
+    .avatar {
+      width: 200px;
+    }
+
+    .avatar-details span {
+      font-size: 14px;
+    }
+  
+  }
 }
