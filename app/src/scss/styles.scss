@@ -123,7 +123,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  // display: none;
 }
 
 .active {
@@ -311,6 +310,36 @@ main {
   }
 
   .container-3 {
-    display: none;
+    position: absolute;
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    left: 780px;
+    top: 300px;
+  }
+  
+  .active {
+    justify-content: center;
+    align-items: baseline;
+  
+    span {
+      font-size: 12px;
+    }
+  
+    .share-container {
+      background-color: #6D7F97;
+      display: none;
+    }
+  
+  }
+  
+  //mixin
+  .social {
+    width: 195px;
+    // border: 1px solid palegoldenrod;
+
+    img {
+      width: 17px;
+    }
   }
 }
