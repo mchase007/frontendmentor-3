@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="/app/src/css/normalise.css">
-  <link rel="stylesheet" href="/app/dist/css/styles.css?cb=">
+  <link rel="stylesheet" href="/src/css/normalise.css">
+  <link rel="stylesheet" href="/dist/css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Article preview component</title>
@@ -20,11 +20,11 @@
 
   <main>
     <figure class="hero-container">
-      <img class="hero-image" src="/app/src/images/drawers.jpg" alt="drawers">
+      <img class="hero-image" src="/src/images/drawers.jpg" alt="drawers">
     </figure>
 
     <section class="content-container">
-      <div class="container-2">
+      <div class="content">
 
         <h1>
           Shift the overall look and feel by adding these wonderful 
@@ -37,11 +37,11 @@
           to help you make any room feel complete.
         </p>
         
-        <div class="user-details state">
+        <div id="user" class="user-details">
   
-          <div class="avatar">
-            <figure class="avatar-container">
-              <img class="avatar-image" src="/app/src/images/avatar-michelle.jpg" alt="Michelle Appleton">
+          <div class="avatar-container">
+            <figure class="avatar">
+              <img class="avatar-image" src="/src/images/avatar-michelle.jpg" alt="Michelle Appleton">
             </figure>
     
             <div class="avatar-details">
@@ -50,25 +50,25 @@
             </div>
           </div>
 
-          <button class="share-container">
-            <img class="share-image" src="/app/src/images/icon-share.svg" alt="share-button">
+          <button class="share-button" id="share-button">
+            <img class="share-image" src="/src/images/icon-share.svg" alt="share-button">
           </button>
   
         </div>
       </div>
 
-      <div class="container-3">
+      <div class="active-container">
         <div class="active">
           
           <div class="social">
             <span>Share</span>
-            <img src="/app/src/images/icon-facebook.svg" alt="">
-            <img src="/app/src/images/icon-twitter.svg" alt="">
-            <img src="/app/src/images/icon-pinterest.svg" alt="">
+            <img src="/src/images/icon-facebook.svg" alt="">
+            <img src="/src/images/icon-twitter.svg" alt="">
+            <img src="/src/images/icon-pinterest.svg" alt="">
           </div>
           
-          <button class="share-container">
-            <img class="share-image" src="/app/src/images/icon-share-active.svg" alt="share-button">
+          <button class="share-button">
+            <img class="share-image" src="/src/images/icon-share-active.svg" alt="share-button">
           </button>
 
         </div>
@@ -83,6 +83,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
-  <script src="/app/dist/main.js?cb="></script>
+  <script src="/dist/main.js?cb"></script>
 </body>
 </html>

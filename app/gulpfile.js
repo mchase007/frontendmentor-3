@@ -7,7 +7,7 @@ const postCss = require('gulp-postcss');
 const autoPrefixer = require('autoprefixer');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const replace = require('gulp-replace');
+// const replace = require('gulp-replace');
 
 const files = {
   htmlPath: './src/*.html',
@@ -32,23 +32,23 @@ function jsTaskRunner() {
     .pipe(dest('dist')); // save to dist folder
 }
 
-const cbString = new Date().getTime();
+// const cbString = new Date().getTime();
 
-function cacheBustTaskRunner() {
-  return src(files.htmlPath)
-    .pipe(replace(/cb=\d+/g, `cb=${cbString}`))
-    .pipe(dest('dist'));
-}
+// function cacheBustTaskRunner() {
+// return src(files.htmlPath)
+// .pipe(replace(/cb=\d+/g, `cb=${cbString}`))
+// .pipe(dest('dist'));
+// }
 
 function watchTaskRunner() {
   watch(
     [files.scssPath, files.jsPath],
-    parallel(scssTaskRunner, jsTaskRunner, cacheBustTaskRunner),
+    parallel(scssTaskRunner, jsTaskRunner),
   );
 }
 
 exports.default = series(
-  parallel(scssTaskRunner, jsTaskRunner, cacheBustTaskRunner),
-  cacheBustTaskRunner,
+  parallel(scssTaskRunner, jsTaskRunner),
+  // cacheBustTaskRunner,
   watchTaskRunner,
 );
