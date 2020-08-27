@@ -312,13 +312,17 @@ main {
     padding-bottom: 0;
   }
 
+  .active-container-parent {
+    position: relative;
+  }
+
   .active-container {
     position: absolute;
     width: 220px;
     height: 40px;
     border-radius: 5px;
-    left: 780px;
-    top: 300px;
+    left: 380px;
+    bottom: 58px;
   }
   
   .active {
@@ -339,7 +343,6 @@ main {
   //mixin
   .social {
     width: 195px;
-    // border: 1px solid palegoldenrod;
 
     img {
       width: 17px;
