@@ -45,18 +45,19 @@ article {
   }
 
   h1 {
-    font-size: 17px;
-    font-weight: 550;
+    font-size: 16px;
+    line-height: 22px;
     width: 268px;
     
     color: #48556A;
   }
 
   p {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 25px;
     min-width: 240px;
     max-width: 292px;
+    font-weight: 500;
     line-height: 22px;
 
     color: #6D7F97;
@@ -172,6 +173,7 @@ article {
       width: 240px;
       margin: 0 auto;
       margin-bottom: 13px;
+      font-size: 15.2px;
     }
 
     p {
@@ -226,19 +228,19 @@ article {
     max-width: 450px;
 
     .content {
-      width: 340px;
+      width: 300px;
     }
 
     h1 {
-      width: 320px;
-      font-size: 20px;
-      line-height: 25px;
+      width: 300px;
+      font-size: 18px;
+      line-height: 24px;
     }
 
     p {
-      min-width: 320px;
-      font-size: 16.4px;
-      line-height: 22px;
+      min-width: 300px;
+      font-size: 16px;
+      line-height: 23px;
       margin-bottom: 30px;
     }
     
@@ -246,7 +248,7 @@ article {
 
   .user-details {
 
-    width: 320px;
+    width: 300px;
 
     .avatar-container {
       width: 200px;
@@ -272,7 +274,6 @@ article {
 @media only screen and (min-width: 1000px) {
 
   article {
-    // border: 2px solid purple;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -280,7 +281,7 @@ article {
   }
 
   .hero-container {
-    width: 45%;
+    width: 380px;
     margin: 0;
 
     img {
@@ -290,7 +291,7 @@ article {
   }
 
   .content-container {
-    width: 70%;
+    width: 500px;
     margin: 0;
     padding: 0;
     border-bottom-left-radius: 0;
@@ -304,22 +305,30 @@ article {
 
     h1 {
       // border: 2px solid palegreen;
-      width: 450px;
-      font-size: 25px;
-      font-weight: 500;
+      width: 380px;
+      font-size: 20.5px;
+      line-height: 28px;
+      // word-spacing: 1px;
     }
 
     p {
       // border: 2px solid blueviolet;
-      font-size: 17px;
+      font-size: 15.5px;
       max-width: 450px;
-      line-height: 23px;
     }
   }
 
   .user-details {
-    width: 92%;
+    width: 400px;
     padding-bottom: 0;
+
+    .avatar-container {
+      width: 180px;
+    }
+
+    .avatar {
+      width: 45px;
+    }
   }
 
   .active-container-parent {
