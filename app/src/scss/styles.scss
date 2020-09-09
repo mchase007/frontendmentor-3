@@ -150,7 +150,6 @@ article {
 
 }
 
-//mixin
 .social {
   display: flex;
   width: 195px;
@@ -291,14 +290,13 @@ article {
   }
 
   .content-container {
-    width: 500px;
+    width: 530px;
     margin: 0;
     padding: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
 
     .content {
-      // border: 2px solid palevioletred;
       width: 80%;
       padding-top: 25px;
     }
@@ -340,7 +338,7 @@ article {
     width: 220px;
     height: 40px;
     border-radius: 5px;
-    left: 380px;
+    left: 300px;
     bottom: 58px;
   }
   
@@ -359,7 +357,6 @@ article {
   
   }
   
-  //mixin
   .social {
     width: 195px;
 

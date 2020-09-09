@@ -23,10 +23,10 @@ function viewShareBar() {
     userDetails.style.display = 'none';
     activeContainer.style.display = 'flex';
   } else if (window.innerWidth > 999) {
-    if (activeContainer.style.display == 'none') {
+    if (activeContainer.style.display === 'none') {
       userDetails.style.display = 'flex';
       activeContainer.style.display = 'flex';
-    } else if (activeContainer.style.display == 'flex') {
+    } else if (activeContainer.style.display === 'flex') {
       activeContainer.style.display = 'none';
     }
   }
