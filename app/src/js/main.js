@@ -23,13 +23,28 @@ function viewShareBar() {
     userDetails.style.display = 'none';
     activeContainer.style.display = 'flex';
   } else if (window.innerWidth > 999) {
-    if (activeContainer.style.display == 'none') {
+    if (activeContainer.style.display === 'none') {
       userDetails.style.display = 'flex';
       activeContainer.style.display = 'flex';
-    } else if (activeContainer.style.display == 'flex') {
+    } else if (activeContainer.style.display === 'flex') {
       activeContainer.style.display = 'none';
     }
   }
+
+  // if (window.matchMedia('(max-width: 999px)').matches) {
+  //   userDetails.style.display = 'none';
+  //   activeContainer.style.display = 'flex';
+  // } else if (window.matchMedia('(min-width: 999px)').matches) {
+  //   userDetails.style.display = 'flex';
+  //   activeContainer.style.display = 'flex';
+  //   shareButton.addEventListener('click', () => {
+  //     if (activeContainer.style.display === 'flex') {
+  //       activeContainer.style.display = 'none';
+  //     } else if (activeContainer.style.display === 'none') {
+  //       activeContainer.style.display = 'flex';
+  //     }
+  //   });
+  // }
 }
 
 shareButton.addEventListener('click', viewShareBar);
