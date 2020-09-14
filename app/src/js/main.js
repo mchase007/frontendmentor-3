@@ -18,17 +18,25 @@ function hideShareBar() {
   activeContainer.style.display = 'none';
 }
 
+let clickCounter = 0;
+
 function viewShareBar() {
   if (window.innerWidth <= 999) {
     userDetails.style.display = 'none';
     activeContainer.style.display = 'flex';
   } else if (window.innerWidth > 999) {
-    this.active = !this.active;
-    const step = (this.active ? 3 : 0);
-    if (step === 3) {
+    let state;
+    // eslint-disable-next-line no-plusplus
+    clickCounter++;
+    if (clickCounter % 2 === 0) {
+      state = 'second-click';
+    } else {
+      state = 'first-click';
+    }
+    if (state === 'first-click') {
       userDetails.style.display = 'flex';
       activeContainer.style.display = 'flex';
-    } else if (step === 0) {
+    } else if (state === 'second-click') {
       activeContainer.style.display = 'none';
     }
   }
@@ -36,3 +44,4 @@ function viewShareBar() {
 
 shareButton.addEventListener('click', viewShareBar);
 alternativeShare.addEventListener('click', hideShareBar);
+
